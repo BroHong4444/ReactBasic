@@ -1,3 +1,14 @@
+.textStyle {
+  text-align: center;
+  color: red;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.textStyle .highlight {
+  color: #61dafb;
+}
+
 .App {
   text-align: center;
 }
