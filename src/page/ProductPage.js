@@ -32,7 +32,6 @@ function ProductPage (){
         if(idEdit == null) {
             var productTmp = [...product, item];
             setProduct(productTmp);
-            onReset();
         }else{
             productTmp = product;
             productTmp[idEdit].barcode = barcode;
@@ -40,6 +39,7 @@ function ProductPage (){
             productTmp[idEdit].price = price;
             setProduct([...productTmp]);
         }
+        onReset();
     }
 
     const onReset = () => {
@@ -59,6 +59,7 @@ function ProductPage (){
         setName(item.name)
         setPrice(item.price)
         setIdEdit(index)
+        // onReset();
     }   
 
     return (
